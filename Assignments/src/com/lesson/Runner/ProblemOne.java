@@ -1,4 +1,4 @@
-package com.lession.Runner;
+package com.lesson.Runner;
 
 import com.squareup.okhttp.Response;
 import com.squareup.okhttp.ResponseBody;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import org.bson.Document;
 
-import com.lession.driver.MongoConnection;
+import com.lesson.driver.MongoConnection;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
@@ -84,7 +84,7 @@ public class ProblemOne {
 													 if(mdb==null)
 									                 mdb = MongoConnection.getConnection();
 													 
-									             MongoCollection collection = mdb.getCollection("Assignment1");
+									             MongoCollection collection = mdb.getCollection("Assignment2");
 												 Document data_to_insert = Document.parse(responce_json);
 												 collection.insertOne(data_to_insert);			
 												 
@@ -103,7 +103,7 @@ public class ProblemOne {
 					if(mdb==null)
 		                 mdb = MongoConnection.getConnection();
 			      
-					MongoCollection Tmpcollection = mdb.getCollection("Assignment1");
+					MongoCollection Tmpcollection = mdb.getCollection("Assignment2");
 					
 					FindIterable<Document> dumps = Tmpcollection.find().sort(new BasicDBObject("main.temp_min",+1)).limit(1);
 					System.out.println("CITY with Minimum Tempreture");
@@ -118,7 +118,7 @@ public class ProblemOne {
 					if(mdb==null)
 		                 mdb = MongoConnection.getConnection();
 			      
-					MongoCollection Tmpcollection2 = mdb.getCollection("Assignment1");
+					MongoCollection Tmpcollection2 = mdb.getCollection("Assignment2");
 					FindIterable<Document> dumps2 = Tmpcollection2.find().sort(new BasicDBObject("main.temp_max",-1)).limit(1);
 					
 					System.out.println("CITY with Maximum Tempreture");

@@ -1,10 +1,10 @@
-package com.lession.Runner;
+package com.lesson.Runner;
 
-import com.lession.Model.Bank;
-import com.lession.Model.CustomerAccount;
-import com.lession.Model.HDFC;
-import com.lession.Model.ICICI;
-import com.lession.Model.SBI;
+import com.lesson.Model.Bank;
+import com.lesson.Model.CustomerAccount;
+import com.lesson.Model.HDFC;
+import com.lesson.Model.ICICI;
+import com.lesson.Model.SBI;
 
 public class ProblemTwo {
 
@@ -30,7 +30,7 @@ public class ProblemTwo {
 		   c1.getBanktype().rateOfInterest();
 		   
 		 
-		System.out.println("<===Customer Details====>");
+		System.out.println("<===Customer Details END====>");
 		
 		System.out.println("<===Customer Details====>");
 		  
@@ -41,7 +41,7 @@ public class ProblemTwo {
 		   c2.getBanktype().rateOfInterest();
 		   
 		 
-		System.out.println("<===Customer Details====>");
+		System.out.println("<===Customer Details END====>");
 		
 		System.out.println("<===Customer Details====>");
 		  
@@ -52,7 +52,7 @@ public class ProblemTwo {
 		   c3.getBanktype().rateOfInterest();
 		   
 		 
-		System.out.println("<===Customer Details====>");
+		System.out.println("<===Customer Details END====>");
 		
 		
 	}

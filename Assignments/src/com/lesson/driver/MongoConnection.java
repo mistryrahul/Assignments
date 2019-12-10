@@ -1,4 +1,4 @@
-package com.lession.driver;
+package com.lesson.driver;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -10,7 +10,7 @@ public class MongoConnection {
 	
 	static String user_id="root";
 	static String password="admin123";
-	static String database_name="lession";
+	static String database_name="lesson";
 	
 	static MongoClient mongoclient=null;
 	static MongoDatabase mongodatabase;
